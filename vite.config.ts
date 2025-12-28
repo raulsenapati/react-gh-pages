@@ -9,18 +9,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  build:{
-    rollupOptions: {
-      input: {
-        main: resolve(__dirname, 'index.html')
-      },
-    },
-    watch: {
-
-    }
-  },
-  base: "/react-gh-pages",
   plugins: [react()],
+  base: "/react-gh-pages",
   server: {
     open: true,
     host: "::",

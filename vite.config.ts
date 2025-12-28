@@ -10,7 +10,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   plugins: [react()],
-  base: "/react-gh-pages",
+  base: "/react-gh-pages/",
   server: {
     open: true,
     host: "::",

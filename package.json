@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "homepage": "https://raulsenapati.github.io/react-gh-pages",
   "type": "module",
+  "main": "src/index.tsx",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",

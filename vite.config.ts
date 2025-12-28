@@ -4,7 +4,12 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
-export default defineConfig(({
+export default defineConfig(({ mode }) => ({
   base: "/react-gh-pages",
-  plugins: [react()]
+  plugins: [react()],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
 }));

@@ -9,6 +9,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
+  base: "/react-gh-pages",
   plugins: [
     react(),
     mode === 'development' &&

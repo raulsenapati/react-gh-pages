@@ -7,6 +7,10 @@ import { componentTagger } from "lovable-tagger";
 export default defineConfig(({ mode }) => ({
   base: "/react-gh-pages",
   plugins: [react()],
+  server: {
+    open: true,
+    port: 3001
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
